@@ -6,8 +6,8 @@ authors = ["wweavishayaknin <WWEAVISHAYAKNIN@GMAIL.COM>"]
 readme = "README.md"
 
 [tool.poetry.packages]
-# Correctly specify the packages as an array
-include = [{ include = "product_detection" }]  # Adjust this based on your package structure
+# Specify packages correctly as an array
+packages = [{ include = "product_detection" }]  # Ensure this matches your directory structure
 
 [tool.poetry.dependencies]
 python = "^3.12"
