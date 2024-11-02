@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "A Streamlit app for detecting products in images."
 authors = ["wweavishayaknin <WWEAVISHAYAKNIN@GMAIL.COM>"]
 readme = "README.md"
-packages = [{ include = "product_detection" }]  # Adjust this based on your package structure
+
+[tool.poetry.packages]
+include = [{ include = "product_detection" }]  # Adjust this based on your package structure
 
 [tool.poetry.dependencies]
 python = "^3.12"
